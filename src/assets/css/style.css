@@ -100,14 +100,14 @@ h3 {
 .header {
   width: 100%;
   background-color: #5DA5A4;
-  background-image: url("../src/assets/images/bg-header-desktop.svg");
+  background-image: url("../images/bg-header-desktop.svg");
   background-size: cover;
   min-height: 9.75rem;
 }
 
 @media (max-width: 376px) {
   .header {
-    background-image: url("../src/assets/images/bg-header-mobile.svg");
+    background-image: url("../images/bg-header-mobile.svg");
   }
 }
 
