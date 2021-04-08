@@ -1,0 +1,216 @@
+.job{
+    border-radius: 6px;
+    padding: 2.5rem 2rem;
+    background: white;
+    box-shadow: 0px 10px 10px 0px #5da5a446;
+
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint-down(){
+        padding: 1.5rem;
+        padding-top: 0;
+        padding-bottom: .5rem;
+
+        &:not(:last-child){
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+.logo{
+    width: 5.5rem;
+    margin-right: 2rem;
+
+    @include breakpoint-down(){
+        width: 48px;
+        transform: translateY(-50%);
+    }
+}
+
+
+.company{
+    color: #5DA5A4;
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: .875rem;
+
+    @include breakpoint-down(){
+        font-size: .8125rem;
+    }
+}
+
+.new{
+    color: white;
+    text-decoration: uppercase;
+    border-radius: 50px;
+    background-color: #5DA5A4;
+    padding: .5rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: .75rem;
+}
+
+.featured{
+    color: white;
+    text-decoration: uppercase;
+    border-radius: 50px;
+    background-color: $veryDarkGrayishCyan;
+    padding: .5rem;
+    line-height: 1;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.featured_job{
+    border-left: 5px solid #5DA5A4;
+}
+
+.position{
+    color: $veryDarkGrayishCyan;
+    margin-top: .625rem;
+    font-size: 1.125rem;
+
+    @include breakpoint-down(){
+        font-size: 1rem;
+        margin-top: 1.25rem;
+    }
+}
+
+.coords{
+    margin-top: .625rem;
+    @include breakpoint-down(){
+        margin-top: 1.25rem;
+    }
+}
+
+.coords > p{
+    color: $darkGrayishCyan;
+
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+
+    @include breakpoint-down(){
+        &:not(:last-child){
+            margin-right: .625rem;
+        }
+    }
+
+}
+
+.left{
+    @include breakpoint-down(){
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid $darkGrayishCyan;
+    }
+}
+
+.right{
+    margin-left: auto;
+
+    @include breakpoint-down(){
+        flex-wrap: wrap;
+    }
+}
+
+.specs{
+    border-radius: 3px;
+    color: #5DA5A4;
+    background-color: $lightGrayishCyan;
+    font-weight: 700;
+    padding: .5rem;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+
+    &:hover{
+        color: $lightGrayishCyan;
+        background-color: #5DA5A4;
+    }
+
+    @include breakpoint-down(){
+        margin-bottom: 1rem;
+    }
+
+}
+
+.remove{
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: .35rem;
+    background-color: #5DA5A4;
+    transition: all 400ms ease-in-out;
+    margin-right: 1rem;
+
+    &:hover{
+        background-color: $veryDarkGrayishCyan;
+    }
+}
+
+.tag{
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: #5DA5A4;
+    background-color: $lightGrayishCyan;
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.tag__pill{
+    @include breakpoint-down(){
+        margin-bottom: 1rem;
+    }
+}
+
+.tags_container{
+    max-width: 95%;
+    @include breakpoint-down(){
+        flex-wrap: wrap;
+    }
+}
+
+.tags{
+    background: white;
+    padding: 1.25rem 2.5rem;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    box-shadow: 0px 10px 10px 0px #5da5a446;
+
+    @include breakpoint-down(){
+        margin-bottom: 2rem;
+        padding: 1.25rem;
+        padding-bottom: .25rem;
+    }
+}
+
+.pt{
+    padding-top: 2.5rem;
+}
+
+.clear{
+    color: #5DA5A4;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-weight: 700;
+    margin-left: auto;
+    transition: all 400ms ease-in-out;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.removex{
+    width: 14px;
+    height: 14px;
+}
